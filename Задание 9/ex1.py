@@ -1,7 +1,7 @@
 from random import randint
 
-m = int(input("Введите вол-во строк "))
-n = int(input("Введите вол-во стоблцов "))
+m = int(input("Введите кол-во строк "))
+n = int(input("Введите кол-во стоблцов "))
 
 print("Элементы массива:")
 a = [[randint(1,21) for j in range(n)] for i in range(m)]
