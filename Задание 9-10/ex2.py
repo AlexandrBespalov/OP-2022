@@ -1,5 +1,9 @@
 from random import shuffle, randint
 
+with open('ex2_input.txt', 'r') as f:
+    с = [[int(num) for num in line.split(',')] for line in f]
+print(с)
+
 n = int(input())
 b = [[randint(10,99) for i in range(n)] for j in range(n)]
 shuffle(b)
@@ -21,3 +25,6 @@ b[n//2][n//2], b[i1][j1] = b[i1][j1], b[n//2][n//2]
  
 for i in b:
     print(i)
+
+with open("ex2_output.txt", "w") as file:
+    print(file=file, sep=",\n", end="\n") #тоже не уверен с выводом
