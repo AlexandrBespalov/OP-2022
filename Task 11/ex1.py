@@ -9,7 +9,7 @@ def getData():
     url = f"https://api.github.com/users/{otv}"
     data = requests.get(url).json()
 
-    with open("getJSON.json", "a") as file:
+    with open("getJSON.json", "w") as file:
         json.dump(data, file, indent = 3)
 
 #В задании не указано, что нужно получить ТОЛЬКО заданные данные, поэтому я спарсил все, в том числе и необходимые.
