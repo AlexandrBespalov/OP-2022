@@ -3,7 +3,7 @@ from random import randint
 def func():
 
     with open('ex1_input.txt', 'r') as f:
-        a = [[int(num) for num in line.split(',')] for line in f]
+       a = [[int(num) for num in line.split(',')] for line in f]
     print(a)
 
     m = int(input("Введите кол-во строк "))
