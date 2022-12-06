@@ -18,6 +18,6 @@ def func():
         print(min(x), end = " ")
 
     with open("ex1_output.txt", "w") as file:
-        print( file=file, sep=",\n", end="\n") #есть вопросы с выводом в отдельный файл 11-16 строки
+        print( file=file, sep=",\n", end="\n")
 
 func()

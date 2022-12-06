@@ -1,9 +1,14 @@
-x = int(input())
+array = [3,5,5,4,2,7,6,0,6,3]
 
-i = 0
+def func():
+    result = 0
+    for i in range(len(array)):
+        if array[i] < 0:
+            continue
 
-while x != 0:
-    i += 1
-    x = int(input())
-    
-print(i)
+        if array[i] != 0:
+            result+=1
+        else:
+            print(f"Кол-во членов в последовательности {result}")
+
+func()

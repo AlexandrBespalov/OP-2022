@@ -1,12 +1,14 @@
-x = int(input())
-y = int(input())
+x = int(input("В первый день: "))
+y = int(input("Цель: "))
 
-n = 1
+def func():
+    result = 0
+    currentDistance = x
 
-while x <= y:
-    if x == y:
-        break
-    x += x / 10
-    n += 1
+    while currentDistance < y:
+        result += 1
+        currentDistance *= 1.1
 
-print(n)
+    return f"Дней: {result}"
+
+print(func())

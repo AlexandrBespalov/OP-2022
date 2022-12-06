@@ -1,9 +1,15 @@
-n = int(input())
+from re import X
 
-a = 1
-i = 1
+n = 50
 
-while i ** 2 <= n:
-    a = i ** 2
-    print(a)
-    i += 1
+def func():
+    if n <= 0:
+        return
+
+    for i in range(1,n):
+        x = i**2
+
+        if x <= n:
+            print(x)
+
+func()
